@@ -6,5 +6,12 @@ use Illuminate\Http\Request;
 
 class sitioController extends Controller
 {
+    public function index(){
+        echo "Hola Mundo" ;
+    }
+
+    public function saludar(Request $request, $nombre){
+        echo "Hola ". $nombre;
+    }
     //
 }
